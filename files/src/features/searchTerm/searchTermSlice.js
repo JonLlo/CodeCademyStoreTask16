@@ -11,8 +11,7 @@ const initialState = '';
 export const SearchTermReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'searchTerm/setSearchTerm': {
-      const { term } = action.payload;
-      return term
+      return action.payload
       }
     case 'searchTerm/clearSearchTerm': {
       return ''
